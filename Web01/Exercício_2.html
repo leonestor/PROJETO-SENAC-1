@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset= “utf-8”>
+
+<title>Calcula Voto</title>
+
+<script>
+
+//Saber se eleitor(a) pode votar ou não
+
+idade = parseInt(prompt("Digite a sua idade:"))
+
+    if(idade >= 16){
+
+        if(idade >= 18 && idade < 70){alert("Você pode votar e seu voto é OBRIGATÓRIO!")}
+            else{alert("Você já pode votar, mas seu voto é opcional.")}
+    }   
+
+    else if(idade >= 0 && idade <= 15 ){ alert("Você ainda não pode votar!")}
+
+        else{alert("Digite uma idade válida!")}
+
+
+</script>
