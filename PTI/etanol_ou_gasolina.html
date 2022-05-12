@@ -1,35 +1,33 @@
-<!DOCTYPE html>
-    <meta charset="utf-8">
-        <html>
+    <!DOCTYPE html>
+        <meta charset="utf-8">
+            <html>
 
-            <title>Etanol ou Gasolina?</title>
-            <h1>Obrigado por utilizar nossa calculadora!</h1>
-            <br>
-            Desenvolvido por <strong>Leonardo Nestor</strong> para a matéria de Algoritmos e Programação 1
-            <br>    
-
-                <script>
-                    
-                    alert("Siga as instruções e economize!")
-
-                    do{ 
+                <title>Etanol ou Gasolina?</title>
+                
+                    <script>
                         
-                        $ETA = prompt("Digite o preço do Etanol?");
-                        $GAS = prompt("Digite o preço da gasolina?");
-                        conta = ($ETA/$GAS).toFixed(2);
+                        alert("Siga as instruções e economize!")
 
-                                    
-                        if(conta < 0.70){ alert("Compensa você abastecer com Etanol")}
-                        else if(conta > 0.70){ alert("Compensa você abastecer com Gasolina")}
-                        else{alert("Neste caso, tanto faz")}
+                        do{ $ETA = prompt("Digite o preço do Etanol?");
+                            $GAS = prompt("Digite o preço da gasolina?");
+                            conta = ($ETA/$GAS).toFixed(2);
 
-                        redo = prompt("Deseja realizar um novo cálculo? Digite 1 para sim e 2 para não")
-                    
-                      }
+                                        
+                            if(conta < 0.70){ alert("Compensa você abastecer com Etanol")}
+                            else if(conta > 0.70){ alert("Compensa você abastecer com Gasolina")}
+                            else{alert("Neste caso, tanto faz")}
 
-                        while(redo == 1)
+                            do{redo = prompt("Deseja realizar um novo cálculo? Digite 1 para sim e 2 para não")}
+                            while(redo != 1 && redo !=2 )
 
-                    
-                </script>
+                         }
 
-        </html>
+                            while(redo == 1)
+                       
+                    </script>
+
+                <h1>Obrigado por utilizar nossa calculadora!</h1>
+                <br>
+                Desenvolvido por <strong>Leonardo Nestor</strong> para a matéria de Algoritmos e Programação 1 
+
+            </html>
