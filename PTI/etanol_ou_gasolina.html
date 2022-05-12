@@ -1,21 +1,35 @@
 <!DOCTYPE html>
     <meta charset="utf-8">
+        <html>
 
-        <title>Etanol ou Gasolina?</title>
-        <h3>Etanol ou Gasolina?</h3>
-        <br>    
+            <title>Etanol ou Gasolina?</title>
+            <h1>Obrigado por utilizar nossa calculadora!</h1>
+            <br>
+            Desenvolvido por <strong>Leonardo Nestor</strong> para a matéria de Algoritmos e Programação 1
+            <br>    
 
-            <script>
+                <script>
+                    
+                    alert("Siga as instruções e economize!")
 
-                function pulaLinha() { document.write("<br>"); }
-                function imprime(frase) { document.write(frase); pulaLinha(); }
+                    do{ 
+                        
+                        $ETA = prompt("Digite o preço do Etanol?");
+                        $GAS = prompt("Digite o preço da gasolina?");
+                        conta = ($ETA/$GAS).toFixed(2);
 
-                precoalcool = prompt("Qual o preço do Etanol?");
-                precogasolina = prompt("Qual o preço da gasolina?");
-                calculo = (precoalcool/precogasolina).toFixed(2);
+                                    
+                        if(conta < 0.70){ alert("Compensa você abastecer com Etanol")}
+                        else if(conta > 0.70){ alert("Compensa você abastecer com Gasolina")}
+                        else{alert("Neste caso, tanto faz")}
 
-                if(calculo < 0.70){ imprime("Compensa você abastecer com Etanol")}
-                else if(calculo > 0.70){ imprime("Compensa você abastecer com Gasolina")}
-                else{imprime("Neste caso, tanto faz")}
+                        redo = prompt("Deseja realizar um novo cálculo? Digite 1 para sim e 2 para não")
+                    
+                      }
 
-            </script>
+                        while(redo == 1)
+
+                    
+                </script>
+
+        </html>
